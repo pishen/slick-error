@@ -2,6 +2,7 @@ package app.database
 
 import slick.jdbc.H2Profile.api._
 import app._
+import app.Global._
 
 class Users(tag: Tag) extends Table[User](tag, "requests") {
   def id = column[Long]("id")
